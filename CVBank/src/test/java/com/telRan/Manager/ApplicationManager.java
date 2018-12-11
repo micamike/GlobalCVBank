@@ -17,7 +17,8 @@ public class ApplicationManager {
     public void start(){
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.navigate().to("https://cv-app-test.herokuapp.com");
+        //wd.navigate().to("https://cv-app-test.herokuapp.com");
+        wd.navigate().to("https://cvbank.soft-gen.com/");
         createCVHelper = new CreateCVHelper(wd);
         companyHelper = new CompanyHelper(wd);
         navigationHelper = new NavigationHelper(wd);
